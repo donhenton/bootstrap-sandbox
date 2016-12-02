@@ -1,0 +1,32 @@
+{
+  "name": "bootstrap-sandbox",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "dhenton",
+  "contributors": [],
+  "dependencies": {
+    "browserify": "^13.1.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-sync": "^0.1.4",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uglifycss": "^1.0.6",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.11",
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "^6.5.0"
+  }
+}
