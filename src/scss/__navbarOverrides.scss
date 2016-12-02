@@ -1,6 +1,18 @@
- .navbar-brand {
-   
-  //padding: $navbar-padding-vertical $navbar-padding-horizontal;
-  padding: 22px 30px 0 15px;
-  
- }
+.navbar-brand {
+
+    //padding: $navbar-padding-vertical $navbar-padding-horizontal;
+    padding: 22px 30px 0 15px;
+
+} 
+
+
+
+.navbar-nav {
+    > li > a {
+        
+        .icon {  
+                color: $gray-light;
+        }
+
+    }
+}

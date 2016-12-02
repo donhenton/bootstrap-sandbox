@@ -8603,3 +8603,6 @@ button.close {
 
 .navbar-brand {
   padding: 22px 30px 0 15px; }
+
+.navbar-nav > li > a .icon {
+  color: #aeaeae; }
