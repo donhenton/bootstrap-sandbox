@@ -8606,3 +8606,8 @@ button.close {
 
 .navbar-nav > li > a .icon {
   color: #aeaeae; }
+  .navbar-nav > li > a .icon:hover, .navbar-nav > li > a .icon:focus,
+  .navbar-nav > li > a .icon:hover .icon,
+  .navbar-nav > li > a .icon:focus .icon {
+    color: goldenrod;
+    background-color: #fafafa; }

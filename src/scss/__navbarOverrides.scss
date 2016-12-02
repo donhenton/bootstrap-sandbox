@@ -8,11 +8,37 @@
 
 
 .navbar-nav {
+
+
     > li > a {
-        
+
         .icon {  
-                color: $gray-light;
+            color: $gray-light;
+            &:hover,
+                &:focus,
+                &:hover .icon, 
+                &:focus .icon {
+                color: $navbar-default-link-hover-color;
+                background-color: $navbar-default-link-hover-bg;
+            }
+
+
         }
 
     }
+
+
+    > .active > a {
+        &,
+        &:hover,
+            &:focus,
+            .icon, 
+            &:hover .icon, 
+            &:focus .icon {     
+            color: $navbar-default-link-active-color;
+            background-color: $navbar-default-link-active-bg;
+        }
+    }
+
+
 }
