@@ -1,9 +1,16 @@
 /* main.scss */
+//override variables here 
+@import "__overrides";
+
+////////
+
 @import "bootstrap";
 @import "bootstrap/theme";
 
 
-.fred
-{
-    width: 20px;
-}
+//override bootstrap items here
+ @import "__navbarOverrides";
+ 
+ 
+ 
+ /////////////////
