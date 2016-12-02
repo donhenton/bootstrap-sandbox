@@ -1,9 +1,10 @@
 /* main.scss */
 //override variables here 
+
 @import "__overrides";
 
 ////////
-
+@import "fontawesome/font-awesome";
 @import "bootstrap";
 @import "bootstrap/theme";
 
