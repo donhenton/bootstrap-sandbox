@@ -1,1 +1,4 @@
 /node_modules/
+/public_html/chapter2/js/
+/public_html/chapter2/css/
+.DS_Store

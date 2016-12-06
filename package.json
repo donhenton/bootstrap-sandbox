@@ -8,10 +8,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-        "del": "^2.2.2",
-        "bootstrap-sass": "^3.3.7",
-        "gulp": "^3.9.1",
-        "gulp-sass": "^2.3.2" 
+    "bootstrap-sass": "^3.3.7",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-server-livereload": "^1.9.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
