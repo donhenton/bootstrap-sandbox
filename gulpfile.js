@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var server = require('gulp-server-livereload');
 // source and distribution folder
 var source = 'src/';
-var appRoot = 'public_html/chapter2';
+var appRoot = 'public_html/chapter4';
 var dest = appRoot + '/css/bootstrap/';
 var watch = require("gulp-watch");
 var batch = require('batch');
