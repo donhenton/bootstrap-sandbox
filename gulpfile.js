@@ -4,9 +4,11 @@ var del = require("del");
 var sass = require('gulp-sass');
 var server = require('gulp-server-livereload');
 // source and distribution folder
-var  source = 'src/';
+var source = 'src/';
 var appRoot = 'public_html/chapter2';
 var dest = appRoot + '/css/bootstrap/';
+var watch = require("gulp-watch");
+var batch = require('batch');
 
 // Bootstrap scss source
 var bootstrapSass = {
@@ -19,8 +21,8 @@ var fonts = {
     out: dest + 'fonts/'
 };
 var jsFiles = {
-    in: [source+'js/vendor/*.*' ,source+'/js/main.js'],
-    out: appRoot +'/js'
+    in: [source + 'js/vendor/*.*', source + '/js/main.js'],
+    out: appRoot + '/js'
 };
 
 // css source file: .scss files
@@ -50,33 +52,45 @@ gulp.task('js-files', function () {
 });
 
 // compile scss
-gulp.task('sass', ['fonts','js-files'], function () {
+gulp.task('sass', ['fonts', 'js-files'], function () {
+    console.log("sass called");
     return gulp.src(scss.in)
             .pipe(sass(scss.sassOpts))
             .pipe(gulp.dest(scss.out));
 });
 
-// default task
-gulp.task('default', ['serve', 'sass'], function () {
-    gulp.watch(scss.watch, ['sass']);
+
+gulp.task('watch', function () {
+    gulp.watch(scss.watch, ['sass'])
+
 });
+
+
+
+// default task
+gulp.task('default', ['serve', 'sass', 'watch'], function () {
+
+});
+
 
 
 gulp.task('serve', function (done) {
     gulp.src(appRoot)
             .pipe(server({
                 open: true,
-              //  log: 'debug',
-              //  clientLog: 'debug',
+                //  log: 'debug',
+                //  clientLog: 'debug',
                 livereload: {
-                    
+
                     clientConsole: true,
                     enable: true,
                     filter: function (filePath, cb)
                     {
-                        console.log("filepath " + filePath)
+                        //console.log("filepath " + filePath)
                         if (/index.html/.test(filePath)) {
-                            console.log("hit " + filePath)
+                            //console.log("hit " + filePath)
+                            cb(true)
+                        } else if (/main.css/.test(filePath)) {
                             cb(true)
                         }
                     }
@@ -91,7 +105,7 @@ gulp.task('serve', function (done) {
 
 
 gulp.task('clean', function ( ) {
-    console.log("cleaning "+dest+" "+jsFiles.out);
-    del.sync([dest,jsFiles.out]);
+    console.log("cleaning " + dest + " " + jsFiles.out);
+    del.sync([dest, jsFiles.out]);
 
 });
