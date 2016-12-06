@@ -1,0 +1,50 @@
+header[role="banner"] {
+    .banner-brand {
+        padding-top: 40px;
+    }
+    > .container {
+        position: relative;
+    }
+    .utility-nav {
+        position: absolute;
+        z-index: 1999;
+        top: 0;
+        right: 0;
+        > ul {
+            list-style: none;
+            > li {
+                float: left; >a {
+                    display: inline-block;
+                    padding: 8px 12px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+
+
+                    @media (max-width: ($grid-float-breakpoint - 1)) {
+                        span {
+                            @include sr-only();
+                        } }
+
+
+                    .icon {
+                        font-size: 2em;
+                        line-height: 1.2;
+                    }
+
+
+
+
+                } }
+        }}}
+
+
+.navbar-toggle
+{
+
+    position: relative;
+    float: left; // edited
+    margin-left: $navbar-padding-horizontal;
+
+
+}

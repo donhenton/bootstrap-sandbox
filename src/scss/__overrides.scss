@@ -1,4 +1,4 @@
-/*
+
 $gray-darker: #222;
 $gray-dark:  #454545; 
 $gray: #777; 
@@ -6,8 +6,11 @@ $gray-light: #aeaeae;
 $gray-lighter: #ccc; 
 $gray-lightest: #ededed; 
 $off-white: #fafafa;
-$brand-primary: #c1ba62;
- 
+$brand-primary: #3e7dbd;
+$brand-feature: #c60004;
+$link-color: $brand-primary;
+$link-color-hover: lighten($link-color, 15%);
+ /*
 $link-hover-color: goldenrod;
 $navbar-height: 64px;
 $navbar-margin-bottom: 0;
@@ -22,6 +25,24 @@ $navbar-default-link-active-bg: $gray-lightest;
 $navbar-default-link-disabled-color:  $gray-lighter;
 $navbar-default-link-disabled-bg:    transparent;
 */
+
+
+$navbar-height: 44px;
+$text-color: $gray-dark !default;
+$navbar-default-color: $text-color;
+$navbar-default-bg: #fff;
+ 
+$navbar-default-link-color:        $navbar-default-color;
+$navbar-default-link-hover-color:  $navbar-default-color;
+$navbar-default-link-hover-bg:     darken($navbar-default-bg, 5%);
+$navbar-default-link-active-color: $navbar-default-color;
+$navbar-default-link-active-bg:    $navbar-default-link-hover-bg;
+ 
+$navbar-default-toggle-hover-bg: transparent;
+$navbar-default-toggle-icon-bar-bg: $gray;
+$navbar-default-toggle-border-color: transparent;
+
+ 
  
 $carousel-indicator-bg: #222;
 $carousel-indicator-active-bg: #ccc;
