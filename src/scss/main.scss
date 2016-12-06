@@ -7,11 +7,11 @@
 @import "fontawesome/font-awesome";
 @import "bootstrap";
 @import "bootstrap/theme";
-
+@import "__footer";
 
 //override bootstrap items here
  @import "__navbarOverrides";
- @import "__carouselOverrides"
- 
+ @import "__carouselOverrides";
+ @import "__miscOverrides";
  
  /////////////////

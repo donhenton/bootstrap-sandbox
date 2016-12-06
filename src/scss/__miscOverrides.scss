@@ -1,0 +1,18 @@
+//get the gold buttons to clear
+
+.container {
+
+    @media (max-width: $screen-xs-max) {
+        [class*="col-"] {
+            clear: both;
+            padding-bottom: 40px;
+        } }
+    
+    
+}
+footer
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   text-align: center;
+}
