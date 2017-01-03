@@ -11,8 +11,47 @@
 
 //override bootstrap items here
 //@import "__navbarOverrides";
+
 @import "__carouselOverrides";
 @import "__miscOverrides";
 @import "__banner";
+@import "chap4/__navbarOverrides";
 
+
+
+
+[class*="col-"] { 
+    @media (min-width: $screen-sm-min) {
+        h1, h2, h3, h4 
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}
+
+$font-size-large: ceil($font-size-base * 1.15);
 /////////////////
+
+
+.content-primary {
+    font-size: $font-size-large;
+}
+$brand-feature:        #c60004;
+
+
+$btn-feature-color: #fff;
+$btn-feature-bg:$brand-feature;
+$btn-feature-border: darken($btn-feature-bg, 5%);
+
+
+.btn-default {
+    @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-primary {
+    @include button-variant($btn-primary-color, $btn-primary-bg,$btn-primary-border);
+}
+
+.btn-feature {
+         @include button-variant($btn-feature-color, $btn-feature-bg, $btn-feature-border);
+       }

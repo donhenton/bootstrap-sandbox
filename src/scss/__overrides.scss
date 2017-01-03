@@ -10,23 +10,7 @@ $brand-primary: #3e7dbd;
 $brand-feature: #c60004;
 $link-color: $brand-primary;
 $link-color-hover: lighten($link-color, 15%);
- /*
-$link-hover-color: goldenrod;
-$navbar-height: 64px;
-$navbar-margin-bottom: 0;
-$navbar-default-color: $gray;
-$navbar-default-bg: #fff;
-$navbar-default-border: $gray-light;
-$navbar-default-link-color: $navbar-default-color;
-$navbar-default-link-hover-color: $link-hover-color;
-$navbar-default-link-hover-bg: $off-white;
-$navbar-default-link-active-color: $gray-dark;
-$navbar-default-link-active-bg: $gray-lightest;
-$navbar-default-link-disabled-color:  $gray-lighter;
-$navbar-default-link-disabled-bg:    transparent;
-*/
-
-
+ 
 $navbar-height: 44px;
 $text-color: $gray-dark !default;
 $navbar-default-color: $text-color;
